@@ -1,0 +1,161 @@
+.c-section {
+    padding-top: 1.5rem;
+}
+.o-wrap--full {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+@media (min-width: 768px){
+.c-section--lg {
+    padding-top: 8.5rem;
+}}
+
+.c-section--lg {
+    padding-top: 1.5rem;
+}
+
+@media (min-width: 640px){
+.c-section {
+    padding-top: 5rem;
+}
+.c-section {
+    padding-top: 1.5rem;
+}
+}
+.o-grid {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.body.is-loaded .js-animate.js-is-viewed .js-animate-part {
+    opacity: 1;
+    transform: translateY(0);
+}
+@media (min-width: 1024px){
+.c-case-study-grid {
+    width: 50%;
+}
+}
+
+@media (min-width: 400px){
+.c-case-study-grid {
+    width: 50%;
+}}
+.c-case-study-grid {
+    width: 100%;
+}
+.o-grid__col {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+@media (min-width: 1024px){
+.js-animate-part {
+    opacity: 0;
+    transition: opacity .75s linear,transform 1.2s cubic-bezier(.245,.495,0,.99);
+    transform: translateY(2.5rem);
+}}
+.o-grid {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.body.is-loaded .js-animate.js-is-viewed .js-animate-part {
+    opacity: 1;
+    transform: translateY(0);
+}
+@media (min-width: 1024px){
+.c-case-study-grid {
+    width: 50%;
+}
+}
+@media (min-width: 400px){
+.c-case-study-grid {
+    width: 50%;
+}}
+.c-case-study-grid {
+    width: 100%;
+}
+.o-grid__col {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+@media (min-width: 1024px){
+.js-animate-part {
+    opacity: 0;
+    transition: opacity .75s linear,transform 1.2s cubic-bezier(.245,.495,0,.99);
+    transform: translateY(2.5rem);
+}}
+
+.c-case-study__thumb__image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: none;
+}
+img, svg {
+    display: block;
+    vertical-align: middle;
+    max-width: 100%;
+}
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+img {
+    display: block;
+    vertical-align: middle;
+}
+img {
+    border-style: solid;
+}
+img {
+    border-style: none;
+}
+
+.c-case-study__thumb__text {
+    opacity: 0;
+    transition: opacity .5s ease;
+    transition-delay: .15s;
+}
+
+.c-case-study__thumb__text {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: rgba(0,0,0,.7);
+    padding: 2em;
+}
+
+.c-case-study__thumb__brand, .c-case-study__thumb__title {
+    opacity: 0;
+    transform: translateY(1em);
+    transition: opacity .15s ease,transform .25s cubic-bezier(.245,.495,0,.99);
+    transition-delay: 0s;
+}
+.c-case-study__thumb__brand, .c-case-study__thumb__title {
+    transition: font-size .3s ease;
+}
+.c-case-study__thumb__title {
+    line-height: 1.125;
+    font-weight: 700;
+    padding-top: 1rem;
+    color: #fff;
+    max-width: 10em;
+    font-size: 3em;
+}

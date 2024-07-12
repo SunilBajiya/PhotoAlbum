@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /**
+  * VARIABLES
+  */
+
+  :root {
+    --color-primary: #4c2982;
+    --color-secondary: #f9d170;
+    --color-grey: rgba(183, 192, 199, 0.1);
+    --bg-grey: #EFF1F4;
+    --bg-white: #fff;
+    --color-text: #252525;
+    --color-shadow: rgba(23, 11, 41, 0.12);
+
+
+    --font-base-family: "Helvetica Neue", sans-serif;
+    --font-heading-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --metric-rhythm: 1rem;
+    --metric-gutter: 2rem;
+    --metric-box-padding: 1rem 1rem;
+    --metric-interaction-padding: 0.6rem 0.6rem;
+  }
+
+
+
+  /**
+   * VISUALLY HIDDEN UTILITY
+   */
+  .visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+  }
+
+  /**
+  * MAIN STYLES
+  */
+
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: inherit;
+  }
+
+
+  html {
+    font-family: sans-serif;
+  }
+
+  body {
+    font-family: var(--font-base-family, sans-serif);
+    background: var(--color-grey);
+    color: var(--color-text);
+    padding: var(--metric-gutter, 2rem);
+  }
+
+  h1 {
+    font-family: var(--font-heading-family, sans-serif);
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: var(--color-primary);
+    line-height: 1.1;
+  }
+
+  /**
+  * FLOW UTILITY
+  */
+
+  .flow {
+    --flow-space: var(--metric-rhythm);
+  }
+
+  .flow>*+* {
+    margin-top: 1em;
+    margin-top: var(--flow-space);
+  }
+
+  /**
+  * CARDS
+  */
+
+  .cards {
+    @supports (display: grid) {
+      display: grid;
+      grid-column-gap: 1rem;
+      grid-row-gap: 0rem;
+      grid-template-columns: repeat(auto-fit, minmax(23rem, 23rem));
+    }
+
+    .card {
+      display: flex;
+      margin-top: 1.5rem;
+      flex-direction: column;
+      border: 2px solid var(--color-shadow);
+      border-radius: 6px;
+      background-color: var(--bg-white, #fff);
+
+      .meta__creators:before {
+        content: '•';
+        padding-right: 5px;
+        color: grey;
+      }
+
+      .card__img {
+        position: relative;
+
+        .img__cover {
+          height: 11rem;
+        }
+
+        .img__profile {
+          height: 5rem;
+          width: 5rem;
+          display: flex;
+          position: absolute;
+          bottom: -1.6em;
+          left: 1em;
+
+          img {
+            border-radius: 10px;
+            border: 3px solid #fff;
+          }
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          -o-object-fit: cover;
+          object-fit: cover;
+        }
+      }
+
+      .card__text {
+
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
+        -webkit-box-ordinal-group: 3;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 1rem;
+
+        >*+* {
+          margin-top: 1rem;
+        }
+
+        > :last-child {
+          margin-top: auto;
+          padding-top: 0.75rem;
+        }
+
+        abbr {
+          border-bottom-width: 1px;
+          border-bottom-style: dotted;
+        }
+
+        p {
+          max-width: 50ch;
+          font-weight: 400;
+          font-size: 0.8em;
+          color: grey;
+        }
+
+        small {
+          display: block;
+          font-size: 0.9em;
+          font-weight: 400;
+        }
+
+        h2 {
+          font-size: 0.9em;
+          width: 40ch;
+          margin-top: 1.2rem;
+
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+
+    }
+  }
+</style>
+
+<body>
+  <main class="[ main ] [ flow ]">
+    <h1>Card Layout</h1>
+    <ul class="cards">
+      <li class="card">
+        <div class="card__img">
+          <div class="img__cover">
+            <img
+              src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60"
+              alt="" />
+          </div>
+
+        </div>
+        <div class="[ card__text ] [ flow ]">
+          <h2>
+            <a href="#">Architecture Centre Launches New Design Podcast</a>
+          </h2>
+
+          <p>The series is in English with nine episodes available on iTunes and Spotify</p>
+
+        </div>
+      </li>
+      <li class="card">
+        <div class="card__img">
+          <div class="img__cover">
+            <img
+              src="https://images.unsplash.com/photo-1531206266563-27319e334a96?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60"
+              alt="" />
+          </div>
+
+        </div>
+        <div class="[ card__text ] [ flow ]">
+          <h2>
+            <a href="#">Rethinking Traditional Glazing in Two Adaptive Designs</a>
+          </h2>
+
+        </div>
+        <p>Studio completed two remodel projects in the Netherlands</p>
+
+        </div>
+      </li>
+      <li class="card">
+        <div class="card__img">
+          <div class="img__cover">
+            <img
+              src="https://images.unsplash.com/photo-1525935944571-4e99237764c9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80"
+              alt="" />
+          </div>
+
+        </div>
+        <div class="[ card__text ] [ flow ]">
+          <h2>
+            <a href="#">Reparametrize Studio Envisions the Future of Smart City</a>
+          </h2>
+          <p>The investigation can distinguish the areas in need of reconstruction</p>
+
+        </div>
+      </li>
+    </ul>
+  </main>
+</body>
+
+</html>

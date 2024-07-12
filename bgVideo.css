@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/background.png');
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    text-align: center;
+
+}
+.content  h1{
+    font-size: 95px;
+    color: #000;
+    margin-bottom: 50px;
+
+}
+.content a{
+    font-size: 23px;
+    color: #000;
+    text-decoration: none;
+    border: 2px solid #e74c3c;
+    padding: 35px 25px;
+    border-radius: 50px;
+    transition: 0.3s;
+
+
+}
+.content a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 50px;
+
+}
+@media(min-aspect-ratio:16/9){
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio:16/9){
+    .background-clip{
+        width: auto;
+        height: 100%;
+
+    }
+}
+.button-pre {
+    border-radius: 19px;
+    color: #e74c3c;
+    width: 100px;
+    background: #00bcd4;
+    border: none;
+    cursor: pointer;
+    padding: 15px 5;
+    font-size: 20px;
+    position: fixed;
+    left: 5px;
+    bottom: 10px;
+}
+
+.button-next{
+    border-radius: 19px;
+    color: #e74c3c;
+    width: 100px;
+    background: #00bcd4;
+    border: none;
+    cursor: pointer;
+    padding: 15px 5;
+    font-size: 20px;
+    position: fixed;
+    right: 5px;
+    bottom: 10px;
+}
+
+.button-next  a:hover{
+   
+    color: #e74c3c;
+  
+}
+.bg-text  h1{
+    font-size: 40px;
+    margin: 40px;
+    cursor: pointer;
+    
+}
+.bg-text h1:hover{
+    color: #be5347;
+}
+.bg-text p{
+    font-size: 20px;
+    font-weight: 450;
+    letter-spacing: 1.2px;
+    word-spacing: 1px;
+    line-height: 1.56;
+    padding: 15px 20px;
+   
+}
+.bg-text p:hover{
+    color: rgb(85, 22, 185);
+}
+
+
+
+ .navhead .navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navhead .logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navhead .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+.navhead .navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navhead .navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navhead .navbar ul li:hover:after{
+    width: 100%;
+    color: #e74c3c;
+    
+
+
+}
+
+
+/*   auto slide run css*/
+
+.tech-slideshow {
+  height: 200px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow > div {
+  height: 200px;
+  width: 2526px;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/collage.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+}
+.tech-slideshow .mover-1 {
+  animation: moveSlideshow 12s linear infinite;
+}
+.tech-slideshow .mover-2 {
+  opacity: 0;
+  transition: opacity 0.7s ease-out;
+  background-position: 0 -200px;
+  animation: moveSlideshow 15s linear infinite;
+}
+.tech-slideshow:hover .mover-2 {
+  opacity: 1;
+}
+
+@keyframes moveSlideshow {
+  100% { 
+    transform: translateX(-60.6666%);  
+  }
+}
+
+

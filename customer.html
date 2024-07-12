@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css" type="text/css">
+    <link rel="stylesheet" href="customer.css" type="text/css">
+    <link rel="stylesheet" href="footer.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        #dvImage {  
+          background-size: cover;
+          background-position: center;
+         
+        }
+      </style>
+</head>
+<body  >
+  
+ 
+
+    <div id="dvImage" style="height: 100vh; width: 100%">
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <div class="customer-text" data-aos="zoom-in-up"  data-aos-offset="200">
+        <h1>Empowering Your Journey: Discover Photo Album 🌟</h1>
+        <p >where exquisite design meets the warmth of home. Our passion is to create living spaces that reflect your unique style and enhance your daily life. Immerse yourself in a world of timeless elegance as our expert designers 
+            craft environments that seamlessly blend aesthetics with functionality. From cozy corners to expansive living areas, we believe in the power of thoughtful design to transform houses into homes. Explore our curated collection of furniture, decor, and inspiration that transcends trends, offering a sanctuary that evolves with you. Discover the perfect balance between comfort and sophistication, where each piece tells a story and every room is a canvas waiting to be adorned. Join us on a journey of redefining home aesthetics, where every detail matters. Experience the art of living beautifully</p>
+    </div>
+  <div id="dvImage"></div>
+
+
+
+  <div class="card-container">
+    <div class="card card-1">
+      <div class="card-img"></div>
+      <a href="" class="card-link">
+        <div class="card-img-hovered"></div>
+      </a>
+      <div class="card-info">
+        <div class="card-about">
+          <a class="card-tag tag-news">NEWS</a>
+        <div class="card-time">1/1/2024</div>
+        </div>
+        <h1 class="card-title">Wishing you and yours some well-deserved downtime and a very happy new year to come.</h1>
+      </div>
+    </div>
+    <div class="card card-2">
+      <div class="card-img"></div>
+      <a href="" class="card-link">
+        <div class="card-img-hovered"></div>
+      </a>
+     
+      <div class="card-info">
+        <div class="card-about">
+          <a class="card-tag">Tour</a>
+        <div class="card-time">9/12/2023</div>
+        </div>
+        <h1 class="card-title">Wishing you and yours some well-deserved downtime and a very happy new year to come.</h1>
+      </div>
+    </div>
+    <div class="card card-3">
+      <div class="card-img"></div>
+      <a href="" class="card-link">
+        <div class="card-img-hovered"></div>
+      </a>
+      <div class="card-info">
+        <div class="card-about">
+          <a class="card-tag tag-deals">Jaisalmer</a>
+        <div class="card-time">5/12/2023</div>
+        </div>
+        <h1 class="card-title">The golden city of Jaisalmer is a reflection of the glorious past of Rajasthan.</h1>
+      </div>
+    </div>
+    <div class="card card-4">
+      <div class="card-img"></div>
+      <a href="" class="card-link">
+        <div class="card-img-hovered"></div>
+      </a>
+      <div class="card-info">
+        <div class="card-about">
+          <a class="card-tag tag-politics">BIKANER</a>
+        <div class="card-time">5/12/2023</div>
+        </div>
+        <h1 class="card-title" >Home to the ship of the Desert touristy cities of Rajasthan.
+        </h1>
+      </div>
+    </div>
+    <div class="card card-5">
+      <div class="card-img"></div>
+      <a href="" class="card-link">
+        <div class="card-img-hovered"></div>
+      </a>
+      <div class="card-info">
+        <div class="card-about">
+          <a class="card-tag tag-politics">Rajasthan</a>
+        <div class="card-time">5/12/2023</div>
+        </div>
+        <h1 class="card-title">Padharo mhare desh <br>we are so happy you chose us for your stay </h1>
+      </div>
+    </div>
+    <div class="card card-6">
+      <div class="card-img"></div>
+      <a href="" class="card-link">
+        <div class="card-img-hovered"></div>
+      </a>
+      <div class="card-info">
+        <div class="card-about">
+          <a class="card-tag tag-politics">Barmer</a>
+        <div class="card-time">5/12/2023</div>
+        </div>
+        <h1 class="card-title" >Barmer district is the third largest district of Rajasthan State.
+    </div>
+  </div>
+ 
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+  var images = ["typing.jpg", "work.jpg", "work1.jpg", "customer.jpg", "customer1.jpg",  "customer2.jpg", "work.jpg","customer3.jpg" , "customer4.jpg"];
+  
+  $(function () {
+    var i = 0;
+    var $dvImage = $("#dvImage");
+    
+    $dvImage.css("background-image", "url(img/" + images[i] + ")");
+    
+    setInterval(function () {
+      i++;
+      if (i === images.length) {
+        i = 0;
+      }
+      
+      $dvImage.fadeOut("slow", function () {
+        $(this).css({
+          "background-image": "url(img/" + images[i] + ")",
+        });
+        $(this).fadeIn("slow");
+      });
+    }, 1800);
+  });
+</script>
+<script>
+   
+</script>
+<footer  style="width: 100%;  height: 99vh;">
+  <div  class="newsletter">
+      <div data-aos="fade-up"  data-aos-offset="200" >
+          <h2>Subscribe Our  Photo<span>Album</h2>
+          <p>We're a team of non-cynics who truly care for our work.</p>
+      </div>
+      <div class="ntext" data-aos="fade-up-right"  data-aos-offset="200">
+          <label ><input type="text" name=""  placeholder="Enter your email">
+          <button>Subscribe</button>
+          
+      </label>
+      </div>
+  </div>
+  <div class="f-contact" data-aos="zoom-in-up"  data-aos-offset="200">
+      <div>
+      <h1>Information</h1>
+      <p>Loren ipsum dolor sit amet, consectetur elit. Nihil sit dicta</p>
+      <i class="fab fa-google"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin"></i>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-github"></i>
+      
+
+  </div>
+  
+  <div>
+      <h1>Useful links</h1>
+     <a  style="text-decoration: none; "  href="about.html"><p>About us</p></a>
+     <a style="text-decoration: none; "  href="Blogposts.html"><p>Blog posts</p></a>
+      <p>Pricing plans</p>
+  </div>
+  <div>
+      <h1>Details</h1>
+     <a  style="text-decoration: none; "  href="slides1.html"><p>Photographers</p></a>
+      <a  style="text-decoration: none; "  href="bgVideo.html"><p>Gallery</p></a>
+      <a style="text-decoration: none; "  href="about1.html"><p>About</p></a>
+      <p>Pricing plans</p>
+  </div>
+  <div>
+      <h1>Help & Support</h1>
+     <a style="text-decoration: none; "  href="Privacypolicy.html"><p>Privacy policy</p></a>
+      <p>Term & condiotions</p>
+     <a style="text-decoration: none; "  href="customer.html"><p>Customer</p></a>
+  </div>
+  <div >
+      <h1>Contact</h1>
+      <p><i class="fas fa-home mr-3"></i> vaishali nagar, Jaipur</p>
+      <p><i class="fas fa-envelope mr-3"></i> sunil@algodox.co.in</p>
+      <p><i class="fas fa-phone mr-3"></i> +91 7300093285 </p>
+   
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

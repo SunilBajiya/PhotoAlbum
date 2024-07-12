@@ -1,0 +1,102 @@
+body, html {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-img {
+    /* The image used */
+ 
+    /* Control the height of the image */
+    min-height: 480px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Add styles to the form container */
+  .container {
+    position: absolute;
+    right: 0;
+    margin: 30px;
+    max-width: 400px;
+    padding: 26px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+    input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit button */
+  .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+  .login-contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('img/login2.avif');
+
+    background-size: cover;
+  }
+ 
+ .login-contact .login-text h3 {
+     
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    font-size: 34px;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+  }
+  .login-contact .login-text  p{
+    
+    color: #ffffff;
+    position: absolute;
+    top: 48%;
+    font-size: 23px;
+    left: 32%;
+    word-spacing: 0.9px;
+    font-weight: 350;
+    line-height: 1.5;
+    transform: translate(-50%, -50%);
+  }
+  
+  .login-contact .login-text  h3:hover{
+    color: #e74c3c;
+  }
+  .login-contact .login-text  p:hover{
+   color: #19c9a3;  
+  }
+  

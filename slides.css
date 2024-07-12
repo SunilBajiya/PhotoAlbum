@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+.container{
+    height: 85vh;
+    width: 100%;
+    background-image: url(img/nature.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 5s;
+    animation-name: animate;
+    animation-direction:alternate-reverse ;
+    animation-duration:20s ;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state:running ;
+    animation-timing-function: ease-in-out;
+
+}
+@keyframes animate{
+    0%{
+        background-image: url(img/11top.jpg);
+    }
+    20%{
+        background-image: url(img/nature12.jpg);
+    }
+    40%{
+        background-image: url(img/nature13.jpg);
+    }
+    60%{
+        background-image: url(img/work.jpg);
+    }
+    80%{
+        background-image: url(img/top2.jpg);
+    }
+    100%{
+        background-image: url(img/home.jpg);
+    }
+  
+}
+
+.button-pre {
+    border-radius: 19px;
+    color: #e74c3c;
+    width: 100px;
+    background: #00bcd4;
+    border: none;
+    cursor: pointer;
+    padding: 15px 5;
+    font-size: 20px;
+    position: fixed;
+    left: 5px;
+    bottom: 10px;
+}
+
+.button-next{
+    border-radius: 19px;
+    color: #e74c3c;
+    width: 100px;
+    background: #00bcd4;
+    border: none;
+    cursor: pointer;
+    padding: 15px 5;
+    font-size: 20px;
+    position: fixed;
+    right: 5px;
+    bottom: 10px;
+}
+
+.button-next  a:hover{
+   
+    color: #e74c3c;
+  
+}
+.m-images{
+    width: 100%;
+    display: flex;
+    margin: 20px 0px;
+  
+   
+}
+
+.member{
+    width: 100px;
+    padding: 20px 100px;
+    font-family: sans-serif;
+
+}.m-images img{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.m-images img:hover{
+    transform: scale(1.5);
+}
+
+.about-text  h1{
+    font-size: 40px;
+    margin: 40px;
+    
+}
+.about-text h1:hover{
+    color: #be5347;
+}
+.about-text p{
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    word-spacing: 1px;
+    line-height: 1.56;
+    padding: 15px 20px;
+}
+.about-text p:hover{
+    color: rgb(98, 43, 185);
+}
+
+.text-video{
+    text-align: left;
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: 0.6px;
+    line-height: 1.56;
+    padding: 15px 20px;
+    text-align: center;
+}
+

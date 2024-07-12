@@ -1,0 +1,308 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+        <link rel="icon" href="img/logopb.png" type="image/png" sizes="96x96">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+
+    <header>
+<a href="#" class="brand"> Travel</a>
+<div class="menu-btn"></div>
+    <div class="navigation">
+        <div class="navigation-items">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Explor</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    </header>
+    <section class="home">
+        <video  class="video-slide active" src="img/11.mp4" autoplay muted loop></video>
+        <video  class="video-slide " src="img/2.mp4" autoplay muted loop></video>
+        <video  class="video-slide " src="img/3.mp4" autoplay muted loop></video>
+        <video  class="video-slide " src="img/4.mp4" autoplay muted loop></video>
+        <video  class="video-slide " src="img/5.mp4" autoplay muted loop></video>
+
+        <div class="content active">
+             <h1>Wonderful. <br> <span> Island</span></h1>
+             <p>This trip made me so happy because I went to states I have not been in before. In the trip, I met new people and went to new places and saw new things. I never expected the trip to be so nice, but it ended up being my best trip ever in my life so far. Why was the trip one I can never forget?</p>
+                <a href="#">Read more</a>
+               </div>
+               <div class="content">
+                <h1>Comping. <br> <span> Enhoy</span></h1>
+                <p>This trip made me so happy because I went to states I have not been in before. In the trip, I met new people and went to new places and saw new things. I never expected the trip to be so nice, but it ended up being my best trip ever in my life so far. Why was the trip one I can never forget?</p>
+                   <a href="#">Read more</a>
+                  </div>
+                  <div class="content ">
+                    <h1>Adventures. <br> <span> Off Road</span></h1>
+                    <p>This trip made me so happy because I went to states I have not been in before. In the trip, I met new people and went to new places and saw new things. I never expected the trip to be so nice, but it ended up being my best trip ever in my life so far. Why was the trip one I can never forget?</p>
+                       <a href="#">Read more</a>
+                      </div>
+                      <div class="content ">
+                        <h1>Feel Nature. <br> <span> Relax</span></h1>
+                        <p>This trip made me so happy because I went to states I have not been in before. In the trip, I met new people and went to new places and saw new things. I never expected the trip to be so nice, but it ended up being my best trip ever in my life so far. Why was the trip one I can never forget?</p>
+                           <a href="#">Read more</a>
+                          </div>
+               <div class="media-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+
+               </div>
+               <div class="slider-navigation">
+                <div class="nav-btn active"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+
+               </div>
+    </section>
+    <script type="text/javascript">
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+         menuBtn.addEventListener("click", () =>{
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+
+         });
+          const btns = document.querySelectorAll('.nav-btn');
+          const slide = document.querySelectorAll(".video-slide");
+           const contects = document.querySelectorAll(".content");
+
+           var sliderNav = function (manual){
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+
+            });
+             slides.forEach((slide) =>{
+                slide.classList.remove("active");
+             });
+             contects.forEach((contect) =>{
+              contect.classList.remove("active");
+             });
+             btns[manual].classList.add("active");
+             slides[manual].classList.add("active");
+             contects[manual].classList.add("active");
+
+           }
+            btns.forEach((btn , i) =>{
+                btn.addEventListener("click", () => {
+                    sliderNav(i);
+                });
+            });
+    </script>
+    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css" type="text/css">
+    <link rel="icon" href="img/logopb.png" type="image/png" sizes="96x96">
+
+</head>
+<body>
+    
+    <section id="main">
+        <nav>
+          <div class="logo">
+            <a href="#">Photo Album</a>
+          </div>
+          <!--Navigation-->
+          <ul class="menu">
+            <li><a href="#">Hello</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Explor</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+         
+        </nav>
+        
+        <video class="video-bg active" src="img/4.mp4" muted autoplay loop></video>
+        <video class="video-bg " src="img/5.mp4" muted autoplay loop></video>
+
+        <video class="video-bg" src="img/3.mp4" muted autoplay loop></video>
+        <video class="video-bg" src="https://res.cloudinary.com/oscarjite/video/upload/v1663096368/video3_vfcnhd.mp4" muted autoplay loop></video>
+        <video class="video-bg" src="img/2.mp4" muted autoplay loop></video>
+
+
+        <div class="overlay"></div>
+        <div class="main-text">
+          <h2>Let's go for a walk...</h2>
+          <h1>...On the Moon</h1>
+          <p>This demo shows a video background slider.</p>
+          <a href="#" class="btn">Let's go!</a>
+            <div class="slider-btns">
+            <div class="slide-btn"></div>
+            <div class="slide-btn"></div>
+            <div class="slide-btn"></div>
+            <div class="slide-btn"></div>
+            <div class="slide-btn"></div>
+
+
+          </div>
+        </div>
+      </section>
+      
+    <section id="six">
+      <h5>PET LOVERS</h5>
+      <h1>Our Team Is Filled With Highly Dedicated Pet Lovers</h1>
+
+      <button class="btn w-btn">Read More</button>
+
+  </section>
+
+
+  <section id="seven" class="goblack">
+      <div class="heading ">
+          <h1>Latest News</h1>
+          <p class="lightblack">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque,
+              eaque ipsa quae ab illo inventore</p>
+
+      </div>
+
+
+      <div class="container container__bg goblack">
+          <div class="info goblack">
+              <span><img src="https://raw.githubusercontent.com/Nis-chal/dog_website_clone/main/images/blog3.jpg" alt=""></span>
+              <div class="info__text">
+                  <pre>                                                   May 5, 2021</pre>
+                  <h1>Hello world!</h1>
+
+
+
+                  <h5 class="">READ MORE ></h5>
+              </div>
+          </div>
+          <div class="info goblack">
+              <span><img src="https://raw.githubusercontent.com/Nis-chal/dog_website_clone/main/images/blog2.jpg" alt=""></span>
+              <div class="info__text">
+                  <pre>                                                    May 5, 2021</pre>
+                  <h1>How to keep your dog cool this summer</h1>
+
+
+
+                  <h5 class="">READ MORE ></h5>
+              </div>
+          </div>
+          <div class="info goblack">
+              <span><img src="https://raw.githubusercontent.com/Nis-chal/dog_website_clone/main/images/blog1.jpg" alt=""></span>
+              <div class="info__text">
+                  <pre>                                                     May 5, 2021</pre>
+                  <h1>Solution for grooming behavior problems</h1>
+
+
+
+                  <h5 class="">READ MORE ></h5>
+              </div>
+          </div>
+      </div>
+  
+      <script>
+        $(document).ready(function () {
+            $('.fa-bars').click(function () {
+                $('.nav-links').slideToggle(3000);
+            })
+        })
+        
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            let width = $(window).width()
+         
+        
+        
+            if (scroll >= 70 && width >= 995) {
+                $('nav').addClass("new-nav");
+        
+                $('nav ul li a').css({"color":"black"})
+        
+                $('.nav-heading span').css({"color":"black"})
+                $('.nav-heading span>i').css({"color":"#F85A40"})
+                $('.fa-moon').css({"color":"black"})
+        
+        
+        
+                // $('nav ul li a').css({"color": "black"})
+        
+                // $('.nav-heading span').css({"color":"black"})
+                // $('.nav-heading span>i').css({"color":"#F85A40"})
+        
+               
+               
+             
+            }
+        
+            else if (scroll==0 && width >= 995){
+                $('nav').removeClass("new-nav");
+                $('nav ul li a').css({"color":"#fff"})
+                $('.nav-heading span>i').css({"color":"#fff"})
+               
+        
+                $('.nav-heading span').css({"color":"white"})
+        
+                $('.fa-moon').css({"color":"#fff"})
+                // $('nav ul li a').css({"color": "#fff"})
+        
+                // $('.nav-heading span').css({"color":"#fff"})
+                // $('.nav-heading span>i').css({"color":"#fff"})
+        
+            }
+            else if(scroll>=70 && width<995){
+                $('.nav-heading span').css({"color":"black"})
+                $('nav').addClass("new-nav");
+                $('.nav-heading span').addClass("black")
+                $('.nav-heading span>i').css({"color":"#F85A40"})
+                $('.fa-moon').css({"color":"black"})
+        
+            }
+        
+            else if(scroll ==0 && width < 995 ){
+                $('nav').removeClass("new-nav");
+                $('.nav-heading span').css({"color":"white"})
+                $('.nav-heading span').removeClass("black")
+                $('.fa-moon').css({"color":"white"})
+        
+                $('.nav-links>span>i').css({"color":"#fff"})
+        
+            }
+        })
+        
+        </script>
+  </section>
+
+      <script>const btns =document.querySelectorAll(".slide-btn");
+        const slider =document.querySelectorAll(".video-bg");
+    
+        var slideVideo = function(index) {
+          btns.forEach((btn) => {
+            btn.classList.remove('active');
+          });
+          slider.forEach((slide) => {
+            slide.classList.remove('active');
+          });
+          btns[index].classList.add('active');
+          slider[index].classList.add('active');
+        }
+    
+        btns.forEach((btn,i) => {
+          btn.addEventListener('click', () => {
+            slideVideo(i);
+          })
+        })</script>
+</body>
+</html>

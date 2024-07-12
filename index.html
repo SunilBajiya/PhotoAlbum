@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Album</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="footer1.css" type="text/css">
+    <link rel="stylesheet" href="header.css" type="text/css">
+    <link rel="stylesheet" href="slides1.css">
+    <link rel="icon" href="img/logopb.png" type="image/png" sizes="96x96">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+          <div class="logopb" > 
+            <a href="Gallery.html"><img src="img/logopb.png"></a>
+            </div>
+            <div class="menu ">
+            <a href="#" >Home</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="mountain.html" >Service</a>
+            <a href="contects.html" >Contact</a>
+</div>  
+<div class="icon">
+  <i class="fa fa-search"></i>
+  <a href="login1.html"> Login</a>
+</div>
+</nav>
+<div class="cloud cloud1" style=" display: inline-block;">
+  <div class="light"></div>
+  <img src="https://images.vexels.com/media/users/3/145795/isolated/preview/05cd33059a006bf49006097af4ccba98-plane-in-flight-by-vexels.png" />
+</div>
+  <section  style="margin-top:12%; margin-left: 30%;   " class="h-text">
+  <i style="margin-left: 27%;" class="fa fa-camera" id="camera"></i>
+  <h1  data-aos="fade-up">Capturing the moments that captivate your heart.</h1>
+  <form role="search" method="get" action="https://www.google.com/search" target="_blank">
+    <input type="text" name="s" placeholder="Search here.." />
+    <button type="submit"><i class="fa fa-search"></i></button>
+    <i id="moveDown" class="fa-solid fa-chevrons-down"></i>
+  </form>
+</section>
+</header>
+
+    <div class="main" style="width: 100%; height: 10vh;">
+      <div class="slide-container">
+        <div class="slide" data-id="0">
+          <div class="slide-image" style="  width: 100%;height: 100vh;  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2021&q=80);"></div>
+        </div>
+        <div class="slide" data-id="1">
+          <div class="slide-image" style=" width: 100%;height: 100vh;
+                     background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+                "></div>
+        </div>
+        <div class="slide" data-id="2">
+          <div class="slide-image" style=" width: 100%;height: 100vh;
+                 background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)),  url(https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+                "></div>
+        </div>
+        <div class="slide" data-id="3">
+          <div class="slide-image" style=" width: 100%;height: 100vh;
+                   background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1659535832621-4ef57c0e141b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80);
+                "></div>
+        </div>
+        <div class="slide" data-id="4">
+          <div class="slide-image" style=" width: 100%;height: 100vh;
+                   background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)),  url(https://images.unsplash.com/photo-1702377168432-ac8b5e387998?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); background-repeat: no-repeat;
+                "></div>
+        </div>
+      </div>
+      
+      <ul class="slide-buttons">
+        <li class="btn-left">
+          <span class="material-symbols-outlined">
+            <img src="img/back-arrow.png"style="height: 40px; width: 40px;" >
+          </span>
+        </li>
+        <li class="btn-right">
+          <span class="material-symbols-outlined">
+            <img src="img/next-arrow.png" style="height: 40px; width: 40px; margin-right: 1px;"  >
+          </span>
+        </li>
+      </ul>
+  
+    </div>
+  
+  
+   
+  <section class="filter-gallery" >
+    
+        <div class="portfolio-menu">
+            <ul>
+                <li  class="active" data-filter="*" style="color: black;">All</li>
+                <li data-filter=".nature" style="color: black;"> Nature</li>
+                <li data-filter=".faishon" style="color: black;">Faishon</li>
+                <li data-filter=".wedding" style="color: black;">Wedding</li>
+
+            </ul>
+        </div>
+       
+        <div class="portfolio-item" style="margin-left: 6%;">
+            <div class="item nature" data-aos="fade-left"  data-aos-offset="100" data-aos-delay="100">
+                <a href="slides.html"><img src="img/nat1.jpg" width="100" height="100" ></a>
+            </div>
+            <div class="item faishon" data-aos="fade-left"  data-aos-offset="100" data-aos-delay="200" >
+                <a href="Faishon.html"><img src="img/fash2.jpeg" width="100" height="100" ></a>
+            </div>
+            <div class="item wedding" data-aos="fade-left"  data-aos-offset="100" data-aos-delay="300">
+               <a href="Wedding.html"><img src="img/wedding4.jpeg" width="100" height="100" ></a>
+            </div>
+            <div class="item nature" data-aos="zoom-in"  data-aos-offset="100" data-aos-delay="100">
+                <a href="slides.html"> <img src="img/nat2.jpg" width="100" height="100" ></a>
+            </div>
+            <div class="item faishon"data-aos="zoom-in"  data-aos-offset="100" data-aos-delay="200">
+              <a href="Faishon.html"><img src="img/fash1.jpeg" width="100" height="100" ></a>
+            </div>
+            <div class="item wedding" data-aos="zoom-in"  data-aos-offset="100" data-aos-delay="300">
+                <a href="Wedding.html"><img src="img/wedding1.jpeg" width="100" height="100" ></a>
+            </div>
+            <div class="item nature"data-aos="fade-down-right"  data-aos-offset="100" data-aos-delay="100">
+                <img src="img/p7.jpg" width="100" height="100" >
+            </div>
+            <div class="item faishon"data-aos="fade-down-right"  data-aos-offset="100" data-aos-delay="200">
+                <a href="trippy.html"><img src="img/p8.jpg" width="100" height="100" ></a>
+            </div>
+            <div class="item wedding" data-aos="fade-down-right"  data-aos-offset="100" data-aos-delay="300">
+                <img src="img/p9.jpg" width="100" height="100" >
+            </div>
+            
+        </div>
+        
+    </section>
+  <!-- <section class="member">
+    <div class="member-info" data-aos="zoom-in-up"  data-aos-offset="100" data-aos-delay="100">
+        <h1> Our <span>Information</span></h1>
+        
+    </div>
+    <!- <div class="member-card" data-aos="zoom-in-down"  data-aos-offset="100" data-aos-delay="200">
+        <img src="img/member.png" >
+        <p>From Rajasthan, doing gym is good for healthy life. it helps our body to fit. it release stress from our mind. from Rajasthan, doing gym is good for life. it helps our body to fit. it release stress our mind.</p>
+        <h2>* Maria Sharapova</h2>
+        <img src="img/icon1.png"  width="100">
+        <img src="img/icon2.png"  width="100">
+        <img src="img/icon3.png"  width="100">
+        <img src="img/icon4.png"  width="100">
+    </div> -->
+     <!--  this the booking slide code here ...   -->
+     <!-- <section class="member">
+    <div class="m-images" data-aos="zoom-in"  data-aos-offset="100" data-aos-delay="100">
+       <a href="travel.html"><img src="img/s1.jpg"></a>
+        <img src="img/s2.jpg">
+        <img src="img/s3.jpg">
+        <img src="img/s4.jpg">
+        <img src="img/s5.jpg">
+        <img src="img/s6.jpg">
+    </div>
+  </section> -->
+  
+  <section style="margin-bottom: 28%;" class="pricing" id="pricingdiv" data-aos="zoom-in"  data-aos-offset="100" data-aos-delay="200">
+    <div class="container headings text-center">
+      <h1 class="text-center font-weight-bold text-white">OUR BEST Explore. Experience. Enjoy.</h1>
+      <p style="color: #fff;">🌍 Tour Packages Starting from ₹3000/Person</p>
+    </div>
+    <div class="container" >
+      <div class="row">
+        <div class="col-lg-4 col-12 card-second">
+          <div class="card text-center">
+             <img  style="cursor: pointer;" src="img/rajasthan.jpg" class="card-img-top" alt="Tour Image">
+            <div class="card-header">TOUR PACKAGE <p >Limited slots available. Don't miss out on this incredible opportunity!</p></div>
+            <div class="card-body">
+              <ul class="list-group">
+                <li class="list-group-item">₹<span class="money">4000</span>/person</li>
+                <li class="list-group-item">Scenic Locations</li>
+                <li class="list-group-item">Transportation Included</li>
+                <li class="list-group-item">Expert Guides</li>
+                <li class="list-group-item">24/7 Customer Support</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="travel.html" class="btn btn-primary">Book Now</a>
+              <a href="#" class="btn btn-info ml-2" data-toggle="tooltip" data-placement="top" title="More Information">
+                <i style="color: #fff;" class="fas fa-share-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+         <div class="col-lg-4 col-12 card-second">
+          <div class="card text-center">
+           <a href="slides.html"><img style="cursor: pointer;" src="img/nat2.jpg" class="card-img-top" alt="Tour Image"></a>
+            <div class="card-header">TOUR PACKAGE <p >Limited slots available. Don't miss out on this incredible opportunity!</p></div>
+            <div class="card-body">
+              <ul class="list-group">
+                <li class="list-group-item">₹<span class="money">3500</span>/person</li>
+                <li class="list-group-item">Scenic Locations</li>
+                <li class="list-group-item">Transportation Included</li>
+                <li class="list-group-item">Expert Guides</li>
+                <li class="list-group-item">24/7 Customer Support</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="travel.html" class="btn btn-primary">Book Now</a>
+              <a href="#" class="btn btn-info ml-2" data-toggle="tooltip" data-placement="top" title="More Information">
+                <i style="color: #fff;" class="fas fa-share-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12 card-second" style="height: 500;">
+          <div class="card text-center">
+            <a href="mountain.html"> <img src="img/nature05.jpg" class="card-img-top" alt="Tour Image"></a>
+            <div class="card-header">TOUR PACKAGE <p >Limited slots available. Don't miss out on this incredible opportunity!</p></div>
+            <div class="card-body">
+              <ul class="list-group"></ul>
+                <li class="list-group-item">₹<span class="money">6000</span>/person</li>
+                <li class="list-group-item">Scenic Locations</li>
+                <li class="list-group-item">Transportation Included</li>
+                <li class="list-group-item">Expert Guides</li>
+                <li class="list-group-item">24/7 Customer Support</li>
+            </ul>
+            </div>
+            <div class="card-footer">
+              <a href="travel.html" class="btn btn-primary">Book Now</a>
+              <a href="#" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="More Information">
+                <i style="color: #fff;" class="fas fa-share-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+  </section>
+
+
+  
+  <div class="card-list"  style="margin-top: 35%; margin-bottom: 5px; margin-left: 6%;  background-color: #F1F1F1;
+  font-family: 'Open Sans', sans-serif;
+  background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);"  >
+    <a href="#" class="card-item">
+        <img src="img/tour.jpg" alt="Card Image">
+        <span class="developer">India</span>
+        <h3>To other countries, I may go as a tourist, but to India, I come as a pilgrim</h3>
+        <div class="arrow">
+            <i class="fas fa-arrow-right card-icon"></i>
+        </div>
+    </a>
+    <a href="desert.html" class="card-item">
+        <img src="img/destert1.jpg" alt="Card Image">
+        <span class="designer">DESERT</span>
+        <h3>The desert landscape takes your breath away especially when the sun starts to set.</h3>
+        <div class="arrow">
+            <i class="fas fa-arrow-right card-icon"></i>
+        </div>
+    </a>
+    <a href="#" class="card-item">
+        <img src="img/tour01.jpg" alt="Card Image">
+        <span class="editor">Tour</span>
+        <h3>The sun does not shine for a few trees and flowers, but for the wide world's joy</h3>
+        <div class="arrow">
+            <i class="fas fa-arrow-right card-icon"></i>
+        </div>
+    </a>
+</div>
+
+
+  <section id="highlights" >
+    <h1 class="sec-heading" style="margin-left: 34px; padding-top: 40px;
+    padding-bottom: 10px; color: black;  "> Highlights Tours</h1> 
+    <p></p>
+        <div class="col-6 slide-img" style="padding-bottom: 5px; padding-top: 5px; margin:10px;  ">
+            <video id="myVideo" controls crossorigin playsinline poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" id="player" muted autoplay   >
+                            <!-- Video files -->
+            <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4"   height: 50%; width: 50%;  >
+            
+                 </video>
+                
+        </div>
+    </div>
+</section>
+
+
+  <div class="recent-listing" style="margin-top: 10px;">
+    <div class="container" >
+      <div class="row">
+        <div class="col-lg-12" >
+          <div class="section-heading" style="color: black;">
+            <h2>Recent Listing</h2>
+            <h6>Check Them Out</h6>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-listing">
+            <div class="item">
+              <div class="row">
+                
+                <div class="col-lg-12" data-aos="zoom-in-up"  data-aos-offset="100" data-aos-delay="100">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img src="img/listing-02.jpg" alt=""></a>
+                    </div>
+                    <div class="right-content align-self-center">
+                      <a href="#"><h4>2. Another House of Gaming</h4></a>
+                      <h6>by: Sunil Bajiya</h6>
+                      <ul class="rate">
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li style="color: #000;">(44) Reviews</li>
+                      </ul>
+                      <span class="price"><div class="icon"><img src="img/listing-icon-01.png" alt=""></div> 1,400 - 3,500 / month </span>
+                      <span class="details">Details: <em>3650 sq ft</em></span>
+                     
+                      <div class="main-white-button">
+                        <a href="contacts.html"><i class="fa fa-eye"></i> Contact Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" data-aos="zoom-in-up"  data-aos-offset="100" data-aos-delay="150">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img src="img/listing-03.jpg" alt=""></a>
+                    </div>
+                    <div class="right-content align-self-center">
+                      <a href="#"><h4>3. Secret Place Hidden House</h4></a>
+                      <h6>by: Sunil Bajiya</h6>
+                      <ul class="rate">
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li style="color: #000;">(40) Reviews</li>
+                      </ul>
+                      <span class="price"><div class="icon"><img src="img/listing-icon-01.png" alt=""></div> 1,600 - 3,500 / month </span>
+                      <span class="details">Details: <em>5500 sq ft</em></span>
+                    
+                      <div class="main-white-button">
+                        <a href="contacts.html"><i class="fa fa-eye"></i> Contact Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item"> 
+              <div class="row">
+                
+                <div class="col-lg-12" data-aos="zoom-in-up"  data-aos-offset="100" data-aos-delay="200">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img src="img/listing-05.jpg" alt=""></a>
+                    </div>
+                    <div class="right-content align-self-center">
+                      <a href="#"><h4>5. Best House Of the Town</h4></a>
+                      <h6>by: Sunil Bajiya</h6>
+                      <ul class="rate">
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li style="color: #000;">(74) Reviews</li>
+                      </ul>
+                      <span class="price"><div class="icon"><img src="img/listing-icon-01.png" alt=""></div> 2,400 - 3,500 / month </span>
+                      <span class="details">Details: <em>1750 sq ft</em></span>
+                      
+                      <div class="main-white-button">
+                        <a href="contacts.html"><i class="fa fa-eye"></i> Contact Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img src="img/listing-06.jpg" alt=""></a>
+                    </div>
+                    <div class="right-content align-self-center">
+                      <a href="#"><h4>6. Amazing Pool Party Villa</h4></a>
+                      <h6>by: Sunil Bajiya</h6>
+                      <ul class="rate">
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li style="color: #000;">(500+) Reviews</li>
+                      </ul>
+                      <span class="price"><div class="icon"><img src="img/listing-icon-01.png" alt=""></div> 1,900 - 2,500 / month </span>
+                      <span class="details">Details: <em>3660 sq ft</em></span>
+                     
+                      <div class="main-white-button">
+                        <a href="contacts.html"><i class="fa fa-eye"></i> Contact Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <div class="col-next text-center mt-5">
+    <p class="custom-pagination">
+    <span>1</span>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <span>...</span>
+    <a href="#">20</a>
+    </p>
+    </div>
+  <!-- <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+    <div class="member aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+      <div class="member-img">
+        <img src="img/s2.jpg" class="img-fluid" alt="">
+        <div class="social">
+          <a href=""><i class="bi bi-twitter"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="member-info">
+        <h4>sunil Bajiya </h4>
+        <span>Accountant</span>
+      </div>
+    </div>
+  </div>
+       -->
+
+  <div class="more-update-section"  
+>
+    <div class="container">
+    <div class="row d-flex justify-content-center align-items-center gy-5">
+    <div class="col-lg-6 text-lg-start text-center">
+    <div class="more-update-content">
+    <h2>Join Us for More Update</h2>
+    <p>Plan and book your perfect trip with expert advice, travel tips, destination information and inspiration from us.</p>
+    </div>
+    </div>
+    <div class="col-lg-3 text-lg-end text-center">
+     <a style="text-decoration: none;" href="contects.html"><button class="button-fill-primary update-btn">Join Now</button></a>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+
+</body>
+    
+<div class="footer-area mt-110">
+  <div class="footer-main-wrapper">
+  <div class="footer-vactor">
+  <img src="img/bg.jpg" alt style="width: 100% ; height: 84vh;">
+  </div>
+  <div class="container">
+  <div class="row justify-content-center g-4">
+  <div class="col-lg-4">
+  <div class="footer-about text-lg-start text-center">
+  <p>Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis hendrerit a id lectus. Suspendissendt molestie turpis nec lacinia vehicula.</p>
+  <div class="footer-social-wrap">
+  <h5>Follow Us On:</h5>
+  <ul class="footer-social-links justify-content-lg-start justify-content-center">
+  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+  <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+  <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+ 
+  </ul>
+  <div class="ntext" data-aos="fade-up-right"  data-aos-offset="100" >
+    <label ><input style="padding: 15px;
+      width: 70%;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      font-family: sans-serif;
+  " type="text" name="email" method="post" placeholder="Enter your email">
+    <button  style=" position: absolute;
+    right: 0;
+    padding: 15px;
+    width: 30%;
+    background: #e74c3c;
+    color: wheat;
+    border: none;
+    outline: none;
+    border-radius: 0 8px 8px 0;">Subscribe</button>
+    
+</label>
+</div>
+  </div>
+  </div>
+  </div>
+  <div class="col-lg-2 col-md-4">
+  <div class="footer-widget">
+  <h4 class="footer-widget-title">Quick Link</h4>
+  <ul class="footer-links">
+  <li><a href="about.html">About Us</a></li>
+  <li><a href="card.html">Tour Package</a></li>
+  <li><a href="customer.html">Destination</a></li>
+  <li><a href="trippy.html">Tour Guide</a></li>
+  <li><a href="travel.html">Booking Process</a></li>
+  <li><a href="Blogposts.html">Blog</a></li>
+  </ul>
+  </div>
+  </div>
+  <div class="col-lg-2 col-md-4">
+  <div class="footer-widget">
+  <h4 class="footer-widget-title">Tour Type</h4>
+  <ul class="footer-links">
+  <li><a href="slides1.html">Wild & Adventure Tours</a></li>
+  <li><a href="mountain.html">Group Tour</a></li>
+  <li><a href="slides.html">Seasonal Tours</a></li>
+  <li><a href="slides1.html">Relaxation Tours</a></li>
+  <li><a href="bgVideo.html">Family Friendly Tours</a></li>
+  </ul>
+  </div>
+  </div>
+  <div class="col-lg-4 col-md-8">
+  <div class="footer-widget">
+  <h4 class="footer-widget-title text-center">Gallery</h4>
+  <div class="footer-gallary-grid">
+  <div class="footer-gallary-item">
+  <a href="img/winter.jpg" data-fancybox="footer" data-caption="Caption Here"><img src="img/winter.jpg" alt></a>
+  </div>
+  <div class="footer-gallary-item">
+  <a href="img/work2.jpg" data-fancybox="footer" data-caption="Caption Here"><img src="img/work2.jpg" alt></a>
+  </div>
+  <div class="footer-gallary-item">
+  <a href="img/home01.jfif" data-fancybox="footer" data-caption="Caption Here"><img src="img/home01.jfif" alt></a>
+  </div>
+  <div class="footer-gallary-item">
+  <a href="img/costomer1.jpg" data-fancybox="footer" data-caption="Caption Here"><img src="img/costomer1.jpg" alt></a>
+  </div>
+  <div class="footer-gallary-item">
+  <a href="Faishon.html"  data-fancybox="footer" data-caption="Caption Here"><img src="img/fan6.jpg" alt></a>
+  </div>
+  <div class="footer-gallary-item">
+  <a href="img/rajasthan.jpg" data-fancybox="footer" data-caption="Caption Here"><img src="img/rajasthan.jpg" alt></a>
+  </div>
+  <div class="footer-gallary-item">
+    <a href="img/tour01.jpg" data-fancybox="footer" data-caption="Caption Here"><img src="img/tour01.jpg" alt></a>
+    </div>
+    <div class="footer-gallary-item">
+      <a href="img/2024.avif" data-fancybox="footer" data-caption="Caption Here"><img src="img/2024.avif" alt></a>
+      </div>
+      <div class="footer-gallary-item">
+        <a href="img/wedding5.jpeg" data-fancybox="footer" data-caption="Caption Here"><img src="img/wedding5.jpeg" alt></a>
+        </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="footer-contact-wrapper">
+  <h5>Contact Us:</h5>
+  <ul class="footer-contact-list">
+  <li><i class="bi bi-telephone-x"></i> <a href="contects.html">+91 7300093286</a></li>
+  <li><i class="bi bi-envelope-open"></i> <a href="contects.html"><span class="__cf_email__" data-cfemail="a1c8cfc7cee1d5ced4d3d9d1d3ce8fc2cecc">sunilkbjat2004@gmail.com</span></a></li>
+  <li><i class="bi bi-geo-alt"></i> <a href="#"> vaishali nagar, Jaipur Rajasthan</a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  <div class="footer-bottom">
+  <div class="container">
+  <div class="row align-items-center justify-content-center">
+  <div class="col-lg-4 col-md-6 order-lg-1 order-3 ">
+  <div class="copyright-link text-lg-start text-center">
+  
+    
+   
+  <p style="white-space: nowrap;" >Copyright 2024 PhotoAlbum | Design By <a style=" cursor: pointer; color: #3c97bf; text-decoration: none;"  target="_blank" >Sunil Bajiya</a><i style="color: red;" class="fa fa-heart"></i></p>
+  </div>
+  </div>
+  <div class="col-lg-4  order-lg-2 order-1">
+  <div class="footer-logo text-center">
+  <a href="Gallery.html"><img src="img/logopb.png" style="width: 25%; height: 25%; color: #fff;" ></a>
+  </div>
+  </div>
+  <div class="col-lg-4 col-md-6 order-lg-3 order-2">
+  <div class="policy-links">
+  <ul class="policy-list justify-content-lg-end justify-content-center">
+  <li><a href="#">Terms & Condition</a></li>
+  <li><a href="#">Privacy Policy</a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center active"><i class="bi bi-arrow-up-short"></i></a>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44"= crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script type="text/javascript">
+        $('.portfolio-item').isotope({
+  // options
+  itemSelector: '.item',
+  layoutMode: 'fitRows'
+});
+$('.portfolio-menu ul li').click(function(){
+    $('.portfolio-menu ul li').removeClass('active');
+    $(this).addClass('active');
+    var selector = $ (this).attr('data-filter');
+    $('.portfolio-item').isotope({filter:selector});
+    return false;
+});
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    
+  <script>
+    let currentSlide = 0;
+    const totalSlides = 5;
+    let slideInterval;
+  
+    const removeClasses = () => {
+      const slides = document.querySelectorAll('.slide');
+      slides.forEach((el) => {
+        el.classList.remove('prev', 'current');
+      });
+    };
+  
+    const addClasses = (slideArr, className) => {
+      slideArr.forEach((el) => {
+        el.classList.add(className);
+      });
+    };
+  
+    const getSlides = (slideIndex) => {
+      return [...document.querySelectorAll('.slide')].filter((item) => slideIndex === +item.dataset.id);
+    };
+  
+    const changeSlide = (direction) => {
+      removeClasses();
+      const prev = currentSlide;
+  
+      if (direction === 'right') {
+        currentSlide = (currentSlide + 1) % totalSlides;
+      } else {
+        currentSlide = (totalSlides + currentSlide - 1) % totalSlides;
+      }
+  
+      const prevSlides = getSlides(prev);
+      const currentSlides = getSlides(currentSlide);
+  
+      addClasses(prevSlides, 'prev');
+      addClasses(currentSlides, 'current');
+    };
+  
+    const autoChangeSlide = () => {
+      changeSlide('right');
+    };
+  
+    const startAutoSlide = () => {
+      slideInterval = setInterval(autoChangeSlide, 5000);
+    };
+  
+    const stopAutoSlide = () => {
+      clearInterval(slideInterval);
+    };
+  
+    // Initialize the slides
+    changeSlide('right');
+  
+    document.querySelector('.btn-left').addEventListener('click', () => {
+      changeSlide('left');
+      stopAutoSlide();
+    });
+  
+    document.querySelector('.btn-right').addEventListener('click', () => {
+      changeSlide('right');
+      stopAutoSlide();
+    });
+  
+    startAutoSlide();
+  </script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var video = document.getElementById('myVideo');
+        if (video) {
+            var startTime = 75;
+            video.addEventListener('loadedmetadata', function () {
+                video.currentTime = startTime;
+                video.play();
+            });
+        } else {
+            console.error("Video element with ID 'myVideo' not found.");
+        }
+    });
+</script>
+
+</body>
+</html>

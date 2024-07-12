@@ -1,0 +1,67 @@
+
+        .post-slider {
+            padding: 80px 0px 100px;
+            background-color: #673AB7;
+        }
+        .post-slider .carousel-control-next, .carousel-control-prev {
+            width: auto;
+            top: 50%;
+            bottom: initial;
+        }
+        .post-slider .carousel-control-prev {
+            left: -40px;
+        }
+        .post-slider .carousel-control-next {
+            right: -40px;
+        }
+        .post-slider .carousel-indicators {
+            bottom: -70px;
+        }
+        .post-slider img {
+            border-radius: 10px;
+            border: 3px solid #ffffff;
+        }
+        .post-slider h3 {
+            font-weight: 600;
+            font-size: 28px;
+            color: #FFEB3B;
+            border-bottom: 2px solid #b39cdb;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        .post-slider .price {
+            font-size: 20px;
+            position: absolute;
+            right: 20px;
+            top: 12px;
+        }
+        .post-slider ul {
+            list-style: none;
+            padding: 0;
+        }
+        .post-slider ul li {
+            padding-bottom: 10px;
+        }
+        .post-slider ul i {
+            font-size: 18px;
+            margin-right: 5px;
+            color: #FFEB3B;
+        }
+        /*-- Responsive CSS --*/
+        @media (max-width: 767px) {
+            .post-slider .carousel-control-prev {
+                left: 0px;
+            }
+            .post-slider .carousel-control-next {
+                right: 0px;
+            }
+            .post-slider h3 {
+                font-size: 22px;
+            }
+            .post-slider .price {
+                font-size: 18px;
+                top: 12px;
+            }
+        }
+       
